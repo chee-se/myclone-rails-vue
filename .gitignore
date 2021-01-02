@@ -6,6 +6,7 @@ capybara-*.html
 /db/*.sqlite3-[0-9]*
 /public/system
 /coverage/
+/spec/examples.txt
 /spec/tmp
 *.orig
 rerun.txt
@@ -29,7 +30,7 @@ config/master.key
 .env
 
 ## Environment normalization:
-/.bundle
+# /.bundle
 /vendor/bundle
 
 # these should all be checked in to normalize the environment:
@@ -65,3 +66,13 @@ yarn-debug.log*
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

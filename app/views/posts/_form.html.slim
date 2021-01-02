@@ -1,0 +1,28 @@
+#upload-image.card
+  .head
+    p.title Upload your image
+    p.notice File should be Jpeg, Png...
+  .body
+    #upload-zone
+      p.advice Drag & Drop your image here
+    |Or
+    .button-wrapper
+      label.pseudo-button.normal[for="upload-input"] Choose a file
+      input#upload-input[type="file"]
+
+#upload-image-processing.card[style="display: none;"]
+  .head
+    p.title Uploading...
+  .body
+    .indicator
+
+#upload-image-complete.card[style="display: none;"]
+  .head
+    i.material-icons.checked check_circle
+    p.title Uploade Successfully!
+  .body
+    #post-image-wrapper
+      = image_tag('')
+    .input-copy-wrapper
+      input#image-url[type="text" value="" readonly]
+      button.copy-link Copy Link
