@@ -7,6 +7,7 @@ html
     = csrf_meta_tags
     = csp_meta_tag
     = javascript_packs_with_chunks_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_packs_with_chunks_tag 'hello_vue', media: 'all', 'data-turbolinks-track': 'reload'
     = stylesheet_packs_with_chunks_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   body
     = yield
