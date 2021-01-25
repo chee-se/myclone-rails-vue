@@ -8,8 +8,29 @@ import Turbolinks from "turbolinks";
 import * as ActiveStorage from "@rails/activestorage";
 import "channels";
 
+import TurbolinksAdapter from "vue-turbolinks";
+import Vuetify from "vuetify";
+import Vue from "vue";
+import App from "../app.vue";
+
 import "../src/posts";
 
 Rails.start();
 Turbolinks.start();
 ActiveStorage.start();
+
+Vue.use(TurbolinksAdapter);
+Vue.use(Vuetify);
+
+document.addEventListener("turbolinks:load", () => {
+  const app = new Vue({
+    el: "#hello",
+    data: () => {
+      return {
+        message: "Can you say hello?",
+      };
+    },
+    components: { App },
+  });
+  console.log(app);
+});

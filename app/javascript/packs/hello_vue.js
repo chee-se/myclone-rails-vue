@@ -51,23 +51,23 @@
 //
 // Then uncomment the code block below:
 //
-import TurbolinksAdapter from "vue-turbolinks";
-import Vuetify from "vuetify";
-import Vue from "vue";
-import App from "../app.vue";
+// import TurbolinksAdapter from "vue-turbolinks";
+// import Vuetify from "vuetify";
+// import Vue from "vue";
+// import App from "../app.vue";
 
-Vue.use(TurbolinksAdapter);
-Vue.use(Vuetify);
+// Vue.use(TurbolinksAdapter);
+// Vue.use(Vuetify);
 
-document.addEventListener("turbolinks:load", () => {
-  const app = new Vue({
-    el: "#hello",
-    data: () => {
-      return {
-        message: "Can you say hello?",
-      };
-    },
-    components: { App },
-  });
-  console.log(app);
-});
+// document.addEventListener("turbolinks:load", () => {
+//   const app = new Vue({
+//     el: "#hello",
+//     data: () => {
+//       return {
+//         message: "Can you say hello?",
+//       };
+//     },
+//     components: { App },
+//   });
+//   console.log(app);
+// });
